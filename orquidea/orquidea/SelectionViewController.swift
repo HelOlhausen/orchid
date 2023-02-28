@@ -2,7 +2,7 @@
 //  SelectionViewController.swift
 //  orquidea
 //
-//  Created by Manuela Vilanova on 22/2/22.
+//  Created by Helen Olhausen on 22/2/22.
 //
 
 import Foundation

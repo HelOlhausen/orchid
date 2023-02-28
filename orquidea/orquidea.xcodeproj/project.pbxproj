@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		87DEF97829AE40A900F6DBD1 /* Visual.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DEF97729AE40A900F6DBD1 /* Visual.swift */; };
-		87DEF97B29AE40F000F6DBD1 /* SwiftProcessing in Frameworks */ = {isa = PBXBuildFile; productRef = 87DEF97A29AE40F000F6DBD1 /* SwiftProcessing */; };
 		E90654FE27C529A70030C57C /* marte.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E90654FD27C529A70030C57C /* marte.mp3 */; };
 		E906550027C52B420030C57C /* pluton.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E90654FF27C52B420030C57C /* pluton.mp3 */; };
 		E906550227C52D050030C57C /* sol.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E906550127C52D050030C57C /* sol.mp3 */; };
@@ -29,7 +27,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		87DEF97729AE40A900F6DBD1 /* Visual.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Visual.swift; sourceTree = "<group>"; };
 		E90654FD27C529A70030C57C /* marte.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = marte.mp3; sourceTree = "<group>"; };
 		E90654FF27C52B420030C57C /* pluton.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pluton.mp3; sourceTree = "<group>"; };
 		E906550127C52D050030C57C /* sol.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sol.mp3; sourceTree = "<group>"; };
@@ -57,7 +54,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E983E9B427C4A89100A59F78 /* AVFoundation.framework in Frameworks */,
-				87DEF97B29AE40F000F6DBD1 /* SwiftProcessing in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,7 +89,6 @@
 				E983E9A727C4A6B300A59F78 /* Assets.xcassets */,
 				E983E9A927C4A6B300A59F78 /* LaunchScreen.storyboard */,
 				E983E9AC27C4A6B300A59F78 /* Info.plist */,
-				87DEF97729AE40A900F6DBD1 /* Visual.swift */,
 			);
 			path = orquidea;
 			sourceTree = "<group>";
@@ -139,7 +134,6 @@
 			);
 			name = orquidea;
 			packageProductDependencies = (
-				87DEF97A29AE40F000F6DBD1 /* SwiftProcessing */,
 			);
 			productName = orquidea;
 			productReference = E983E99B27C4A6B200A59F78 /* orquidea.app */;
@@ -170,7 +164,6 @@
 			);
 			mainGroup = E983E99227C4A6B200A59F78;
 			packageReferences = (
-				87DEF97929AE40F000F6DBD1 /* XCRemoteSwiftPackageReference "SwiftProcessing" */,
 			);
 			productRefGroup = E983E99C27C4A6B200A59F78 /* Products */;
 			projectDirPath = "";
@@ -212,7 +205,6 @@
 				E983E9B927C4AB9A00A59F78 /* SelectionViewController.swift in Sources */,
 				E983E99F27C4A6B200A59F78 /* AppDelegate.swift in Sources */,
 				E983E9A127C4A6B200A59F78 /* SceneDelegate.swift in Sources */,
-				87DEF97829AE40A900F6DBD1 /* Visual.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,25 +428,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		87DEF97929AE40F000F6DBD1 /* XCRemoteSwiftPackageReference "SwiftProcessing" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/jjkaufman/SwiftProcessing";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.3.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		87DEF97A29AE40F000F6DBD1 /* SwiftProcessing */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 87DEF97929AE40F000F6DBD1 /* XCRemoteSwiftPackageReference "SwiftProcessing" */;
-			productName = SwiftProcessing;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E983E99327C4A6B200A59F78 /* Project object */;
 }

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cr2-LD-k7Y">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cr2-LD-k7Y">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,31 +18,42 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qBN-LS-Tbi" customClass="Visual" customModule="orquidea" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="jOH-Bo-C31" appends="YES" id="Aet-Ig-x0S"/>
                                 </connections>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oBq-tu-e00">
+                                <rect key="frame" x="110.5" y="427.5" width="193" height="41"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="consult the oracle">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="tapOnConsultar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gTa-Ky-o1J"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.89227609536082475" green="0.89227609536082475" blue="0.89227609536082475" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="qBN-LS-Tbi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="AXK-zu-umG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qBN-LS-Tbi" secondAttribute="trailing" id="Hya-vu-018"/>
                             <constraint firstItem="qBN-LS-Tbi" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="QxD-iM-9Dk"/>
-                            <constraint firstItem="qBN-LS-Tbi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-88" id="mYF-p2-2v2"/>
+                            <constraint firstItem="oBq-tu-e00" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RFz-AU-ytN"/>
+                            <constraint firstItem="oBq-tu-e00" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="oGr-sh-myz"/>
                             <constraint firstAttribute="bottom" secondItem="qBN-LS-Tbi" secondAttribute="bottom" id="vxN-e8-xeR"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="nWb-Tg-hmb"/>
+                    <connections>
+                        <outlet property="askTheOracleButton" destination="oBq-tu-e00" id="8YG-Kt-g2J"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="jOH-Bo-C31">
-                    <connections>
-                        <action selector="tapOnConsultar:" destination="BYZ-38-t0r" id="UuX-Nz-5ZM"/>
-                    </connections>
-                </tapGestureRecognizer>
+                <tapGestureRecognizer id="jOH-Bo-C31"/>
             </objects>
             <point key="canvasLocation" x="939.13043478260875" y="79.6875"/>
         </scene>
@@ -52,7 +63,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cr2-LD-k7Y" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="fHI-X8-OQY">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
@@ -66,9 +77,4 @@
             <point key="canvasLocation" x="28.985507246376812" y="79.6875"/>
         </scene>
     </scenes>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>
