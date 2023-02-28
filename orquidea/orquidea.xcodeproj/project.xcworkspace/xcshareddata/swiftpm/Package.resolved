@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "swiftprocessing",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jjkaufman/SwiftProcessing",
+      "state" : {
+        "revision" : "887ffd1937b3efe2095390af84a790cabeea9c79",
+        "version" : "0.3.0"
+      }
+    }
+  ],
+  "version" : 2
+}
